@@ -17,7 +17,11 @@ document.addEventListener("DOMContentLoaded", function () {
                     behavior: "smooth"
                 });
 
-                document.querySelector("nav").classList.remove("open");
+                const nav = document.querySelector("nav");
+
+                if (nav) {
+                    nav.classList.remove("open");
+                }
             }
 
         });
@@ -52,8 +56,10 @@ document.addEventListener("DOMContentLoaded", function () {
             const button = contactForm.querySelector("button");
 
             if (button) {
+
                 button.textContent = "Sending...";
                 button.disabled = true;
+
             }
 
         });
