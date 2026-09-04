@@ -8,7 +8,7 @@
   <title>Sanskruti Desai | Portfolio</title>
 
   <meta name="description"
-    content="Portfolio of Sanskruti Desai - MCA student, aspiring Data Analyst and Software Developer.">
+    content="Portfolio of Sanskruti Desai - MCA student, aspiring Data Analyst and software developer.">
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -49,7 +49,8 @@
         <p class="eyebrow">HELLO, I'M</p>
 
         <h1>
-          SANSKRUTI <span>DESAI</span>
+          SANSKRUTI
+          <span>DESAI</span>
         </h1>
 
         <h2>
@@ -69,9 +70,11 @@
             View My Projects
           </a>
 
-          <a class="btn"
-            href="https://sanskrutidesai24.github.io/Portfolio/resume.pdf"
-            download="Sanskruti_Desai_Resume.pdf">
+          <a
+            class="btn"
+            href="resume.pdf"
+            download="Sanskruti_Desai_Resume.pdf"
+          >
             Download Resume
           </a>
 
@@ -97,12 +100,16 @@
       </div>
 
 
+      <!-- HERO PHOTO -->
+
       <div class="hero-visual">
 
         <div class="photo-wrap">
 
-          <img src="profile.jpg"
-            alt="Sanskruti Desai">
+          <img
+            src="profile.jpg"
+            alt="Sanskruti Desai"
+          >
 
         </div>
 
@@ -157,8 +164,8 @@
             I am continuously improving my skills in Python, SQL, Excel,
             Power BI, and data visualization while working on practical
             projects. Currently, I am seeking opportunities to gain
-            hands-on experience, strengthen my technical skills, and grow
-            as a Data Analytics and technology professional.
+            hands-on experience, strengthen my technical skills, and
+            grow as a Data Analytics and technology professional.
           </p>
 
         </div>
@@ -178,9 +185,7 @@
 
           <div>
             <strong>Growing</strong>
-            <span>
-              Data Analytics & Technical Skills
-            </span>
+            <span>Data Analytics & Technical Skills</span>
           </div>
 
         </div>
@@ -449,7 +454,9 @@
 
         <article class="project">
 
-          <div class="project-number"></div>
+          <div class="project-number">
+            01
+          </div>
 
           <h3>
             🌿 Plant Disease Detection Using Machine Learning
@@ -457,8 +464,8 @@
 
           <p>
             Developed a machine learning model to identify plant
-            diseases from leaf images using image processing
-            techniques for early disease detection.
+            diseases from leaf images using image processing techniques
+            for early disease detection.
           </p>
 
           <div class="tags">
@@ -476,15 +483,17 @@
 
         <article class="project">
 
-          <div class="project-number"></div>
+          <div class="project-number">
+            02
+          </div>
 
           <h3>
             📈 Stock Price Prediction Using Machine Learning
           </h3>
 
           <p>
-            Built a predictive model using historical stock market
-            data to analyze trends and forecast future stock prices.
+            Built a predictive model using historical stock market data
+            to analyze trends and forecast future stock prices.
           </p>
 
           <div class="tags">
@@ -502,15 +511,17 @@
 
         <article class="project">
 
-          <div class="project-number"></div>
+          <div class="project-number">
+            03
+          </div>
 
           <h3>
             🌾 Crop Recommendation System Using Soil Data
           </h3>
 
           <p>
-            Designed a system that recommends suitable crops based
-            on soil nutrients and environmental conditions.
+            Designed a system that recommends suitable crops based on
+            soil nutrients and environmental conditions.
           </p>
 
           <div class="tags">
@@ -564,7 +575,8 @@
         </div>
 
         <div>
-          Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate
+          Oracle Cloud Infrastructure 2025
+          Certified AI Foundations Associate
           <br>
           <small>
             Oracle
@@ -616,6 +628,7 @@
 
     <section id="contact" class="section contact-section">
 
+
       <div class="section-title">
 
         <p class="eyebrow">
@@ -633,10 +646,12 @@
       </div>
 
 
-      <div class="contact-container">
+      <!-- CONTACT AREA -->
+
+      <div class="contact-form-wrapper">
 
 
-        <!-- ===== CONTACT FORM ===== -->
+        <!-- CONTACT FORM -->
 
         <div class="contact-form-box">
 
@@ -645,10 +660,7 @@
           </h3>
 
 
-          <!--
-            IMPORTANT:
-            Replace YOUR_FORM_ID with your actual Formspree ID.
-          -->
+          <!-- FORMSPREE FORM -->
 
           <form
             action="https://formspree.io/f/xdeodwpb"
@@ -656,52 +668,73 @@
           >
 
 
-            <!-- Name -->
+            <!-- NAME -->
 
-            <label for="name">
-              Name
-            </label>
+            <div class="form-group">
+
+              <label for="name">
+                Name
+              </label>
+
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+              >
+
+            </div>
+
+
+            <!-- EMAIL -->
+
+            <div class="form-group">
+
+              <label for="email">
+                Email
+              </label>
+
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              >
+
+            </div>
+
+
+            <!-- MESSAGE -->
+
+            <div class="form-group">
+
+              <label for="message">
+                Message
+              </label>
+
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Write your message here..."
+                required
+              ></textarea>
+
+            </div>
+
+
+            <!-- SUBJECT -->
 
             <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Enter your name"
-              required
+              type="hidden"
+              name="_subject"
+              value="New Message from Sanskruti Desai Portfolio"
             >
 
 
-            <!-- Email -->
-
-            <label for="email">
-              Email
-            </label>
-
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Enter your email"
-              required
-            >
-
-
-            <!-- Message -->
-
-            <label for="message">
-              Message
-            </label>
-
-            <textarea
-              id="message"
-              name="message"
-              rows="6"
-              placeholder="Write your message here..."
-              required
-            ></textarea>
-
-
-            <!-- Send Button -->
+            <!-- SEND BUTTON -->
 
             <button
               type="submit"
@@ -715,7 +748,7 @@
         </div>
 
 
-        <!-- ===== CONTACT INFORMATION ===== -->
+        <!-- CONTACT INFORMATION -->
 
         <div class="contact-info-box">
 
@@ -725,13 +758,11 @@
 
 
           <p>
-
             <strong>
               📍 Location:
             </strong>
 
             Pune, Maharashtra, India
-
           </p>
 
 
@@ -761,7 +792,7 @@
           </p>
 
 
-          <p class="contact-text">
+          <p class="contact-description">
 
             Open to Data Analyst internships,
             entry-level opportunities and
