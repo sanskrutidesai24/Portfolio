@@ -5,49 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Sanskruti Desai | Data Analyst Portfolio</title>
+    <title>Sanskruti Desai | Portfolio</title>
 
-    <meta name="description"
-        content="Portfolio of Sanskruti Desai - MCA student and aspiring Data Analyst with skills in Python, SQL, Excel, Power BI and Machine Learning.">
-
-    <link rel="stylesheet" href="style.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
     <!-- ================= NAVBAR ================= -->
+    <header>
+        <nav class="navbar">
 
-    <header class="navbar">
+            <a href="#home" class="logo">
+                SD
+            </a>
 
-        <a href="#home" class="logo">SD</a>
+            <button class="menu-btn" aria-label="Open Menu">
+                ☰
+            </button>
 
-        <button class="menu-btn" aria-label="Open navigation">
-            ☰
-        </button>
+            <nav id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#contact">Contact</a>
+            </nav>
 
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#certifications">Certifications</a>
-            <a href="#contact">Contact</a>
         </nav>
-
     </header>
 
 
+    <!-- ================= HOME ================= -->
     <main>
-
-        <!-- ================= HOME ================= -->
 
         <section id="home" class="hero">
 
             <div class="hero-copy">
 
                 <p class="eyebrow">
-                    HELLO, I'M
+                    MCA STUDENT
                 </p>
 
                 <h1>
@@ -56,44 +56,46 @@
                 </h1>
 
                 <h2>
-                    MCA Student | Aspiring Data Analyst | Software Developer
+                    <span id="typedRoles">Aspiring Data Analyst</span>
                 </h2>
 
                 <p class="intro">
-                    I am passionate about transforming data into meaningful insights
-                    and building practical technology solutions. I enjoy working with
-                    Python, SQL, Excel and Power BI to analyze data, solve problems
-                    and continuously develop my technical skills.
+                    Passionate about transforming data into meaningful insights
+                    and building practical technology solutions. I enjoy working
+                    with Python, SQL, Excel and Power BI to analyze data, solve
+                    problems and continuously develop my technical skills.
                 </p>
-
 
                 <div class="buttons">
 
-                    <a class="btn primary" href="#projects">
+                    <a href="#projects" class="btn primary">
                         View My Projects
                     </a>
 
-                    <a class="btn"
-                        href="https://sanskrutidesai24.github.io/Portfolio/resume.pdf"
-                        download="Sanskruti_Desai_Resume.pdf">
-                        Download Resume
+                    <a href="#contact" class="btn">
+                        Contact Me
                     </a>
 
                 </div>
 
-
                 <div class="contact-mini">
 
                     <span>
-                        ✉ sanskrutidesai24@gmail.com
+                        Email:
+                        <a href="mailto:sanskrutidesai24@gmail.com">
+                            sanskrutidesai24@gmail.com
+                        </a>
                     </span>
 
                     <span>
-                        ☎ 9403908335
+                        Phone:
+                        <a href="tel:9403908335">
+                            9403908335
+                        </a>
                     </span>
 
                     <span>
-                        ⌖ Pune, Maharashtra, India
+                        Pune, Maharashtra, India
                     </span>
 
                 </div>
@@ -101,15 +103,12 @@
             </div>
 
 
-            <!-- HERO PHOTO -->
-
             <div class="hero-visual">
 
                 <div class="photo-wrap">
-
-                    <img src="profile.jpg"
+                    <img
+                        src="assets/img/profile.jpg"
                         alt="Sanskruti Desai">
-
                 </div>
 
             </div>
@@ -118,7 +117,6 @@
 
 
         <!-- ================= ABOUT ================= -->
-
         <section id="about" class="section">
 
             <div class="section-title">
@@ -128,8 +126,13 @@
                 </p>
 
                 <h2>
-                    Building, Learning & Improving
+                    About Me
                 </h2>
+
+                <p>
+                    A motivated MCA student interested in Data Analytics,
+                    Python, SQL, Power BI and Machine Learning.
+                </p>
 
             </div>
 
@@ -139,18 +142,22 @@
                 <div>
 
                     <p>
-                        I am an MCA student with a strong interest in Data Analytics,
-                        Software Development, and solving real-world problems through
-                        technology. I enjoy working with data, discovering meaningful
-                        patterns, and transforming information into useful insights.
+                        I am an MCA student with an interest in Data Analytics
+                        and Software Development. I enjoy working with data,
+                        finding meaningful patterns and creating practical
+                        solutions using technology.
                     </p>
 
                     <p>
-                        I am continuously improving my skills in Python, SQL, Excel,
-                        Power BI, data visualization, and machine learning while
-                        working on practical projects. I am currently seeking
-                        opportunities to gain hands-on experience, strengthen my
-                        technical skills, and grow as a Data Analytics professional.
+                        I have hands-on experience with Python, SQL, Excel,
+                        Power BI and Machine Learning through academic projects
+                        and self-learning.
+                    </p>
+
+                    <p>
+                        I am continuously improving my technical and analytical
+                        skills and looking forward to starting my career in
+                        the field of Data Analytics.
                     </p>
 
                 </div>
@@ -159,18 +166,18 @@
                 <div class="stats">
 
                     <div>
-                        <strong>9.41</strong>
-                        <span>B.Voc CGPA</span>
+                        <strong>5+</strong>
+                        <span>Projects</span>
                     </div>
 
                     <div>
-                        <strong>3+</strong>
-                        <span>Major Projects</span>
+                        <strong>MCA</strong>
+                        <span>Student</span>
                     </div>
 
                     <div>
-                        <strong>Growing</strong>
-                        <span>Data Analytics Skills</span>
+                        <strong>Data</strong>
+                        <span>Analytics Enthusiast</span>
                     </div>
 
                 </div>
@@ -181,7 +188,6 @@
 
 
         <!-- ================= EDUCATION ================= -->
-
         <section id="education" class="section alt">
 
             <div class="section-title">
@@ -191,7 +197,7 @@
                 </p>
 
                 <h2>
-                    Academic Journey
+                    My Education
                 </h2>
 
             </div>
@@ -208,16 +214,12 @@
                     </h3>
 
                     <b>
-                        SPPU University
+                        SPPU University, Pune
                     </b>
 
                     <small>
-                        2025 – Present
+                        Currently Pursuing
                     </small>
-
-                    <p>
-                        Pursuing MCA
-                    </p>
 
                 </article>
 
@@ -227,20 +229,16 @@
                     <span>02</span>
 
                     <h3>
-                        B.Voc. Software Development
+                        Bachelor of Vocational
                     </h3>
 
                     <b>
-                        KBP University, Satara
+                        Software Development
                     </b>
 
                     <small>
-                        2022 – 2025
+                        Completed
                     </small>
-
-                    <p>
-                        CGPA: 9.41
-                    </p>
 
                 </article>
 
@@ -250,20 +248,17 @@
                     <span>03</span>
 
                     <h3>
-                        HSC
+                        Higher Secondary Education
                     </h3>
 
                     <b>
-                        Kolhapur Divisional Board
+                        Science Stream
                     </b>
 
                     <small>
-                        2022
+                        Physics, Chemistry, Mathematics, Biology,
+                        English and Sanskrit
                     </small>
-
-                    <p>
-                        51.83%
-                    </p>
 
                 </article>
 
@@ -273,20 +268,16 @@
                     <span>04</span>
 
                     <h3>
-                        SSC
+                        Continuous Learning
                     </h3>
 
                     <b>
-                        Kolhapur Divisional Board
+                        Data Analytics & Technology
                     </b>
 
                     <small>
-                        2020
+                        Python, SQL, Excel, Power BI and Machine Learning
                     </small>
-
-                    <p>
-                        87%
-                    </p>
 
                 </article>
 
@@ -296,7 +287,6 @@
 
 
         <!-- ================= SKILLS ================= -->
-
         <section id="skills" class="section">
 
             <div class="section-title">
@@ -306,7 +296,7 @@
                 </p>
 
                 <h2>
-                    Technical Toolkit
+                    Technical Skills
                 </h2>
 
             </div>
@@ -314,7 +304,20 @@
 
             <div class="skill-grid">
 
-                <!-- Programming -->
+                <div class="skill-card">
+
+                    <h3>
+                        Data Analytics
+                    </h3>
+
+                    <span>Excel</span>
+                    <span>Power BI</span>
+                    <span>Data Cleaning</span>
+                    <span>Data Visualization</span>
+                    <span>Data Analysis</span>
+
+                </div>
+
 
                 <div class="skill-card">
 
@@ -323,89 +326,26 @@
                     </h3>
 
                     <span>Python</span>
-                    <span>Java</span>
                     <span>SQL</span>
-
-                </div>
-
-
-                <!-- Web Technologies -->
-
-                <div class="skill-card">
-
-                    <h3>
-                        Web Technologies
-                    </h3>
-
+                    <span>Java</span>
                     <span>HTML</span>
                     <span>CSS</span>
                     <span>JavaScript</span>
-                    <span>PHP</span>
 
                 </div>
 
 
-                <!-- Database -->
-
                 <div class="skill-card">
 
                     <h3>
-                        Database
-                    </h3>
-
-                    <span>MySQL</span>
-                    <span>Oracle</span>
-
-                </div>
-
-
-                <!-- Data Analytics -->
-
-                <div class="skill-card">
-
-                    <h3>
-                        Data & Analytics
-                    </h3>
-
-                    <span>Excel</span>
-                    <span>Power BI</span>
-                    <span>Pandas</span>
-                    <span>NumPy</span>
-                    <span>Data Visualization</span>
-
-                </div>
-
-
-                <!-- Core Concepts -->
-
-                <div class="skill-card">
-
-                    <h3>
-                        Core Concepts
+                        Machine Learning
                     </h3>
 
                     <span>Machine Learning</span>
-                    <span>OOP</span>
-                    <span>DBMS</span>
-                    <span>Cloud Computing</span>
-                    <span>Problem Solving</span>
-
-                </div>
-
-
-                <!-- Tools -->
-
-                <div class="skill-card">
-
-                    <h3>
-                        Tools
-                    </h3>
-
-                    <span>VS Code</span>
-                    <span>Git</span>
-                    <span>GitHub</span>
-                    <span>Jupyter Notebook</span>
-                    <span>Visual Studio</span>
+                    <span>Scikit-learn</span>
+                    <span>TensorFlow</span>
+                    <span>OpenCV</span>
+                    <span>Data Preprocessing</span>
 
                 </div>
 
@@ -415,7 +355,6 @@
 
 
         <!-- ================= PROJECTS ================= -->
-
         <section id="projects" class="section alt">
 
             <div class="section-title">
@@ -425,37 +364,42 @@
                 </p>
 
                 <h2>
-                    Featured Projects
+                    My Projects
                 </h2>
+
+                <p>
+                    Some of my academic and practical projects.
+                </p>
 
             </div>
 
 
             <div class="project-grid">
 
-                <!-- Project 1 -->
 
+                <!-- Project 1 -->
                 <article class="project">
 
-                    <div class="project-number">
+                    <span class="project-number">
                         01
-                    </div>
+                    </span>
 
                     <h3>
-                        🌿 Plant Disease Detection Using Machine Learning
+                        Stock Price Prediction Using Machine Learning
                     </h3>
 
                     <p>
-                        Developed a machine learning model to identify plant
-                        diseases from leaf images using image processing
-                        techniques for early disease detection.
+                        Developed a machine learning project to analyze
+                        historical stock market data and predict future
+                        stock price trends.
                     </p>
 
                     <div class="tags">
 
                         <span>Python</span>
+                        <span>Pandas</span>
+                        <span>NumPy</span>
                         <span>Machine Learning</span>
-                        <span>Image Processing</span>
 
                     </div>
 
@@ -463,27 +407,28 @@
 
 
                 <!-- Project 2 -->
-
                 <article class="project">
 
-                    <div class="project-number">
+                    <span class="project-number">
                         02
-                    </div>
+                    </span>
 
                     <h3>
-                        📈 Stock Price Prediction Using Machine Learning
+                        Plant Disease Detection
                     </h3>
 
                     <p>
-                        Built a predictive model using historical stock market
-                        data to analyze trends and forecast future stock prices.
+                        Developed an image classification system for
+                        detecting tomato leaf diseases using image
+                        processing and machine learning techniques.
                     </p>
 
                     <div class="tags">
 
                         <span>Python</span>
-                        <span>Machine Learning</span>
-                        <span>Data Analytics</span>
+                        <span>OpenCV</span>
+                        <span>TensorFlow</span>
+                        <span>CNN</span>
 
                     </div>
 
@@ -491,28 +436,114 @@
 
 
                 <!-- Project 3 -->
-
                 <article class="project">
 
-                    <div class="project-number">
+                    <span class="project-number">
                         03
-                    </div>
+                    </span>
 
                     <h3>
-                        🌾 Crop Recommendation System Using Soil Data
+                        Crop Recommendation System
                     </h3>
 
                     <p>
-                        Designed a machine learning system that recommends
-                        suitable crops based on soil nutrients and environmental
+                        Developed a machine learning system that recommends
+                        suitable crops based on soil and environmental
                         conditions.
                     </p>
 
                     <div class="tags">
 
                         <span>Python</span>
+                        <span>Scikit-learn</span>
                         <span>Machine Learning</span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Project 4 -->
+                <article class="project">
+
+                    <span class="project-number">
+                        04
+                    </span>
+
+                    <h3>
+                        Healthcare Analytics
+                    </h3>
+
+                    <p>
+                        Analyzed healthcare data to identify useful patterns,
+                        trends and insights using Python and data
+                        visualization techniques.
+                    </p>
+
+                    <div class="tags">
+
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>Matplotlib</span>
                         <span>Data Analysis</span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Project 5 -->
+                <article class="project">
+
+                    <span class="project-number">
+                        05
+                    </span>
+
+                    <h3>
+                        Instagram Sentiment Analysis
+                    </h3>
+
+                    <p>
+                        Built a sentiment analysis project to classify
+                        social media reviews into positive and negative
+                        sentiments using Natural Language Processing.
+                    </p>
+
+                    <div class="tags">
+
+                        <span>Python</span>
+                        <span>NLP</span>
+                        <span>TF-IDF</span>
+                        <span>Machine Learning</span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Project 6 -->
+                <article class="project">
+
+                    <span class="project-number">
+                        06
+                    </span>
+
+                    <h3>
+                        Cyber Crime Reporting Portal
+                    </h3>
+
+                    <p>
+                        Developed a web-based portal that allows users
+                        to report cyber crime incidents online and
+                        track complaints.
+                    </p>
+
+                    <div class="tags">
+
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>MySQL</span>
 
                     </div>
 
@@ -524,7 +555,6 @@
 
 
         <!-- ================= CERTIFICATIONS ================= -->
-
         <section id="certifications" class="section">
 
             <div class="section-title">
@@ -534,7 +564,7 @@
                 </p>
 
                 <h2>
-                    Certifications & Programs
+                    Certifications & Achievements
                 </h2>
 
             </div>
@@ -543,71 +573,41 @@
             <div class="cert-grid">
 
                 <div>
-                    Diploma in Cloud Computing
-                </div>
 
+                    <h3>
+                        Oracle Cloud AI Foundations Associate
+                    </h3>
 
-                <div>
-                    Mobile Application Development
-                    <br>
-                    <small>
-                        Sarathi – Government of Maharashtra
-                    </small>
-                </div>
-
-
-                <div>
-                    National Level Workshop on Linux and Cloud Computing
-                </div>
-
-
-                <div>
-                    Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate
-                    <br>
                     <small>
                         Oracle
                     </small>
+
                 </div>
 
 
                 <div>
-                    Be Aptimistic Comprehensive - CRT
-                </div>
 
+                    <h3>
+                        Data Analytics Learning
+                    </h3>
 
-                <div>
-                    Career Edge – Young Professional Course
-                    <br>
                     <small>
-                        TCS iON
+                        Python, SQL, Excel & Power BI
                     </small>
+
                 </div>
 
 
                 <div>
-                    Certificate in Artificial Intelligence
-                    <br>
+
+                    <h3>
+                        5+ Projects Developed
+                    </h3>
+
                     <small>
-                        Accenture
+                        Academic & Practical Projects
                     </small>
-                </div>
 
-
-                <div>
-                    Cybersecurity Analyst Job Simulation
-                    <br>
-                    <small>
-                        TATA
-                    </small>
-                </div>
-
-
-                <div>
-                    Data Analytics and Visualization
-                    <br>
-                    <small>
-                        Accenture
-                    </small>
                 </div>
 
             </div>
@@ -616,7 +616,6 @@
 
 
         <!-- ================= CONTACT ================= -->
-
         <section id="contact" class="section contact-section">
 
             <div class="section-title">
@@ -630,32 +629,30 @@
                 </h2>
 
                 <p>
-                    Open to Data Analyst internships, entry-level opportunities
-                    and project collaborations.
+                    Open to Data Analyst internships, entry-level
+                    opportunities and project collaborations.
                 </p>
 
             </div>
 
 
-            <div class="contact-container">
+            <div class="contact-box">
 
 
                 <!-- CONTACT FORM -->
-
                 <div class="contact-form">
 
-                    <h3>
+                    <h2>
                         Contact Me
-                    </h3>
-
+                    </h2>
 
                     <form
+                        id="contactForm"
                         action="https://formspree.io/f/xdeodwpb"
-                        method="POST">
+                        method="POST"
+                    >
 
-
-                        <div class="form-group">
-
+                        <div>
                             <label for="name">
                                 Name
                             </label>
@@ -665,13 +662,12 @@
                                 id="name"
                                 name="name"
                                 placeholder="Enter your name"
-                                required>
-
+                                required
+                            >
                         </div>
 
 
-                        <div class="form-group">
-
+                        <div>
                             <label for="email">
                                 Email
                             </label>
@@ -681,13 +677,12 @@
                                 id="email"
                                 name="email"
                                 placeholder="Enter your email"
-                                required>
-
+                                required
+                            >
                         </div>
 
 
-                        <div class="form-group">
-
+                        <div>
                             <label for="message">
                                 Message
                             </label>
@@ -695,19 +690,15 @@
                             <textarea
                                 id="message"
                                 name="message"
-                                rows="8"
+                                rows="10"
                                 placeholder="Write your message here..."
-                                required></textarea>
-
+                                required
+                            ></textarea>
                         </div>
 
 
-                        <button
-                            type="submit"
-                            class="send-btn">
-
+                        <button type="submit">
                             Send Message
-
                         </button>
 
                     </form>
@@ -716,109 +707,77 @@
 
 
                 <!-- REACH OUT -->
-
                 <div class="contact-info">
 
-                    <h3>
+                    <h2>
                         Reach Out
-                    </h3>
+                    </h2>
 
 
-                    <div class="info-item">
+                    <ul class="contact-list">
 
-                        <span class="info-icon">
+                        <li>
                             📍
-                        </span>
-
-                        <div>
-
-                            <strong>
-                                Location
-                            </strong>
-
-                            <p>
-                                Pune, Maharashtra, India
-                            </p>
-
-                        </div>
-
-                    </div>
+                            <strong>Location:</strong>
+                            Pune, Maharashtra, India
+                        </li>
 
 
-                    <div class="info-item">
+                        <li>
+                            📧
+                            <strong>Email:</strong>
 
-                        <span class="info-icon">
-                            ✉
-                        </span>
-
-                        <div>
-
-                            <strong>
-                                Email
-                            </strong>
-
-                            <p>
-
-                                <a href="mailto:sanskrutidesai24@gmail.com">
-                                    sanskrutidesai24@gmail.com
-                                </a>
-
-                            </p>
-
-                        </div>
-
-                    </div>
+                            <a href="mailto:sanskrutidesai24@gmail.com">
+                                sanskrutidesai24@gmail.com
+                            </a>
+                        </li>
 
 
-                    <div class="info-item">
+                        <li>
+                            📞
+                            <strong>Phone:</strong>
 
-                        <span class="info-icon">
-                            ☎
-                        </span>
-
-                        <div>
-
-                            <strong>
-                                Phone
-                            </strong>
-
-                            <p>
-
-                                <a href="tel:9403908335">
-                                    9403908335
-                                </a>
-
-                            </p>
-
-                        </div>
-
-                    </div>
+                            <a href="tel:9403908335">
+                                9403908335
+                            </a>
+                        </li>
 
 
-                    <p class="contact-description">
+                        <li>
+                            💼
+                            <strong>LinkedIn:</strong>
 
+                            <a
+                                href="https://www.linkedin.com/in/sanskruti-desai824"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                LinkedIn Profile
+                            </a>
+                        </li>
+
+
+                        <li>
+                            💻
+                            <strong>GitHub:</strong>
+
+                            <a
+                                href="https://github.com/sanskrutidesai24"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                GitHub Profile
+                            </a>
+                        </li>
+
+                    </ul>
+
+
+                    <p>
                         I am interested in Data Analyst internships,
                         entry-level opportunities and projects where
                         I can apply my analytical and technical skills.
-
                     </p>
-
-
-                    <div class="social-links">
-
-                        <a
-                            href="https://linkedin.com/in/sanskruti-desai824"
-                            target="_blank">
-                            LinkedIn
-                        </a>
-
-                        <a
-                            href="https://github.com/sanskrutidesai24"
-                            target="_blank">
-                            GitHub
-                        </a>
-
-                    </div>
 
                 </div>
 
@@ -830,12 +789,11 @@
 
 
     <!-- ================= FOOTER ================= -->
-
     <footer>
 
-        <div class="logo">
+        <a href="#home" class="logo">
             SD
-        </div>
+        </a>
 
         <h3>
             Sanskruti Desai
@@ -846,15 +804,14 @@
         </p>
 
         <p>
-            © 2026 Sanskruti Desai. All Rights Reserved.
+            © <span id="year"></span> Sanskruti Desai. All Rights Reserved.
         </p>
 
     </footer>
 
 
-    <!-- JAVASCRIPT -->
-
-    <script src="script.js"></script>
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
 
 </body>
 
