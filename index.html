@@ -3,42 +3,34 @@
   <div class="section-title">
     <p class="eyebrow">CONTACT</p>
     <h2>Let's Connect</h2>
-    <p>Open to internship and entry-level opportunities.</p>
   </div>
 
-  <div class="contact-form">
+  <div class="contact-grid">
 
-    <h3>Contact Me</h3>
+    <!-- CONTACT FORM -->
+    <div class="contact-card">
+      <h3>Contact Me</h3>
 
-    <form action="https://formspree.io/f/xdeodwpb" method="POST">
+      <form action="https://formspree.io/f/xdeodwpb" method="POST">
 
-      <div class="form-row">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+        >
 
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Enter your name"
-            required
-          >
-        </div>
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        >
 
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Enter your email"
-            required
-          >
-        </div>
-
-      </div>
-
-      <div class="form-group message-group">
         <label for="message">Message</label>
         <textarea
           id="message"
@@ -46,39 +38,45 @@
           placeholder="Write your message here..."
           required
         ></textarea>
-      </div>
 
-      <button type="submit" class="btn primary">
-        Send Message
-      </button>
+        <button type="submit" class="send-btn">
+          Send Message
+        </button>
 
-    </form>
+      </form>
+    </div>
 
-  </div>
 
-  <div class="contact-box">
+    <!-- CONTACT INFORMATION -->
+    <div class="contact-card reach-out">
 
-    <h3>Reach Out</h3>
+      <h3>Reach Out</h3>
 
-    <p>📍 <strong>Location:</strong> Pune, Maharashtra, India</p>
+      <p>
+        <strong>Location:</strong>
+        Pune, Maharashtra, India
+      </p>
 
-    <p>
-      ✉ <strong>Email:</strong>
-      <a href="mailto:sanskrutidesai24@gmail.com">
-        sanskrutidesai24@gmail.com
-      </a>
-    </p>
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:sanskrutidesai24@gmail.com">
+          sanskrutidesai24@gmail.com
+        </a>
+      </p>
 
-    <p>
-      ☎ <strong>Phone:</strong>
-      <a href="tel:9403908335">
-        9403908335
-      </a>
-    </p>
+      <p>
+        <strong>Phone:</strong>
+        <a href="tel:9403908335">
+          9403908335
+        </a>
+      </p>
 
-    <p>
-      Open to Data Analyst internships, entry-level opportunities and project collaborations.
-    </p>
+      <p class="contact-description">
+        Open to Data Analyst internships, entry-level opportunities
+        and project collaborations.
+      </p>
+
+    </div>
 
   </div>
 
