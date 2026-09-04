@@ -1,22 +1,63 @@
-document.querySelectorAll('a[href^="#"]').forEach(a =>
-    a.addEventListener("click", e => {
+document.addEventListener("DOMContentLoaded", function () {
 
-        const t = document.querySelector(a.getAttribute("href"));
+    /* ================= SMOOTH SCROLL ================= */
 
-        if (t) {
-            e.preventDefault();
+    document.querySelectorAll('a[href^="#"]').forEach(function (link) {
 
-            t.scrollIntoView({
-                behavior: "smooth"
-            });
+        link.addEventListener("click", function (event) {
 
-            document.querySelector("nav").classList.remove("open");
-        }
+            const targetId = this.getAttribute("href");
+            const target = document.querySelector(targetId);
 
-    })
-);
+            if (target) {
+
+                event.preventDefault();
+
+                target.scrollIntoView({
+                    behavior: "smooth"
+                });
+
+                document.querySelector("nav").classList.remove("open");
+            }
+
+        });
+
+    });
 
 
-document.querySelector(".menu-btn").addEventListener("click", () =>
-    document.querySelector("nav").classList.toggle("open")
-);
+    /* ================= MOBILE MENU ================= */
+
+    const menuButton = document.querySelector(".menu-btn");
+    const nav = document.querySelector("nav");
+
+    if (menuButton && nav) {
+
+        menuButton.addEventListener("click", function () {
+
+            nav.classList.toggle("open");
+
+        });
+
+    }
+
+
+    /* ================= CONTACT FORM ================= */
+
+    const contactForm = document.getElementById("contactForm");
+
+    if (contactForm) {
+
+        contactForm.addEventListener("submit", function () {
+
+            const button = contactForm.querySelector("button");
+
+            if (button) {
+                button.textContent = "Sending...";
+                button.disabled = true;
+            }
+
+        });
+
+    }
+
+});
