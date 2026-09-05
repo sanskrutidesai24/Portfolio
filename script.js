@@ -1,37 +1,30 @@
 /* ================= MOBILE MENU ================= */
 
 const menuBtn = document.getElementById("menuBtn");
-const navLinks = document.querySelector(".nav-links");
+const navMenu = document.getElementById("navMenu");
 
-menuBtn.addEventListener("click", () => {
+menuBtn.addEventListener("click", function () {
+    navMenu.classList.toggle("active");
 
-    navLinks.classList.toggle("show");
-
-    const icon = menuBtn.querySelector("i");
-
-    if (navLinks.classList.contains("show")) {
-        icon.classList.remove("fa-bars");
-        icon.classList.add("fa-xmark");
+    if (navMenu.classList.contains("active")) {
+        menuBtn.textContent = "✕";
     } else {
-        icon.classList.remove("fa-xmark");
-        icon.classList.add("fa-bars");
+        menuBtn.textContent = "☰";
     }
-
 });
 
 
-/* Close menu after clicking */
+/* ================= CLOSE MOBILE MENU ================= */
 
-document.querySelectorAll(".nav-links a").forEach(link => {
+const navLinks = document.querySelectorAll(".nav-menu a");
 
-    link.addEventListener("click", () => {
+navLinks.forEach(function (link) {
 
-        navLinks.classList.remove("show");
+    link.addEventListener("click", function () {
 
-        const icon = menuBtn.querySelector("i");
+        navMenu.classList.remove("active");
 
-        icon.classList.remove("fa-xmark");
-        icon.classList.add("fa-bars");
+        menuBtn.textContent = "☰";
 
     });
 
@@ -40,7 +33,7 @@ document.querySelectorAll(".nav-links a").forEach(link => {
 
 /* ================= TYPING EFFECT ================= */
 
-const typingElement = document.getElementById("typing");
+const typingText = document.getElementById("typing-text");
 
 const roles = [
     "Aspiring Data Analyst",
@@ -50,37 +43,38 @@ const roles = [
 ];
 
 let roleIndex = 0;
-let charIndex = 0;
+let characterIndex = 0;
 let deleting = false;
 
-function typeRole() {
+
+function typeEffect() {
 
     const currentRole = roles[roleIndex];
 
     if (!deleting) {
 
-        typingElement.textContent =
-            currentRole.substring(0, charIndex + 1);
+        typingText.textContent =
+            currentRole.substring(0, characterIndex + 1);
 
-        charIndex++;
+        characterIndex++;
 
-        if (charIndex === currentRole.length) {
+        if (characterIndex === currentRole.length) {
 
             deleting = true;
 
-            setTimeout(typeRole, 1800);
+            setTimeout(typeEffect, 1600);
 
             return;
         }
 
     } else {
 
-        typingElement.textContent =
-            currentRole.substring(0, charIndex - 1);
+        typingText.textContent =
+            currentRole.substring(0, characterIndex - 1);
 
-        charIndex--;
+        characterIndex--;
 
-        if (charIndex === 0) {
+        if (characterIndex === 0) {
 
             deleting = false;
 
@@ -91,47 +85,65 @@ function typeRole() {
             }
 
         }
-
     }
 
     setTimeout(
-        typeRole,
-        deleting ? 45 : 80
+        typeEffect,
+        deleting ? 60 : 100
     );
 }
 
-typeRole();
+
+typeEffect();
 
 
 /* ================= ACTIVE NAVIGATION ================= */
 
 const sections = document.querySelectorAll("section[id]");
-const navItems = document.querySelectorAll(".nav-links a");
 
-window.addEventListener("scroll", () => {
+window.addEventListener("scroll", function () {
 
-    let current = "";
+    let currentSection = "";
 
-    sections.forEach(section => {
+    sections.forEach(function (section) {
 
-        const sectionTop = section.offsetTop - 150;
+        const sectionTop = section.offsetTop - 120;
 
         if (window.scrollY >= sectionTop) {
-            current = section.getAttribute("id");
+            currentSection = section.getAttribute("id");
         }
 
     });
 
-    navItems.forEach(item => {
+    navLinks.forEach(function (link) {
 
-        item.classList.remove("active");
+        link.classList.remove("active");
 
         if (
-            item.getAttribute("href") === "#" + current
+            link.getAttribute("href") ===
+            "#" + currentSection
         ) {
-            item.classList.add("active");
+            link.classList.add("active");
         }
 
     });
 
 });
+
+
+/* ================= CONTACT FORM ================= */
+
+const contactForm = document.querySelector("form");
+
+if (contactForm) {
+
+    contactForm.addEventListener("submit", function () {
+
+        const submitButton =
+            contactForm.querySelector("button");
+
+        submitButton.textContent = "Sending...";
+
+    });
+
+}
