@@ -1,16 +1,19 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Sanskruti Desai | Data Analyst Portfolio</title>
+    <title>Sanskruti Desai | Portfolio</title>
 
     <meta name="description"
           content="Portfolio of Sanskruti Desai - Aspiring Data Analyst">
 
     <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
@@ -63,12 +66,29 @@
                 Contact Me
             </a>
 
+            <a href="resume.pdf" class="btn secondary" download>
+                Resume
+            </a>
+
         </div>
 
         <div class="contact-mini">
-            <span>📧 sanskrutidesai24@gmail.com</span>
-            <span>📱 9403908335</span>
-            <span>📍 Pune, Maharashtra, India</span>
+
+            <span>
+                <i class="fa-solid fa-envelope"></i>
+                sanskrutidesai24@gmail.com
+            </span>
+
+            <span>
+                <i class="fa-solid fa-phone"></i>
+                9403908335
+            </span>
+
+            <span>
+                <i class="fa-solid fa-location-dot"></i>
+                Pune, Maharashtra, India
+            </span>
+
         </div>
 
     </div>
@@ -76,54 +96,60 @@
 
     <div class="hero-image">
 
-        <!-- Replace profile.jpg with your photo -->
-       <img src="sanskruti.png" alt="Sanskruti Desai">
+        <div class="image-circle">
+
+            <img src="profile.jpg"
+                 alt="Sanskruti Desai">
+
+        </div>
 
     </div>
 
 </section>
 
 
-
 <!-- ================= ABOUT ================= -->
 
 <section id="about" class="section">
 
-    <div class="section-heading">
+    <div class="section-title">
 
-        <p>About me</p>
+        <p>ABOUT ME</p>
 
-        <h2>About Me</h2>
+        <h2>About me</h2>
 
     </div>
 
-
-    <div class="about-content">
+    <div class="about-container">
 
         <div class="about-text">
 
+            <h3>
+                A motivated MCA student interested in
+                Data Analytics, Python, SQL, Power BI
+                and Machine Learning.
+            </h3>
+
             <p>
-                A motivated MCA student interested in Data Analytics,
-                Python, SQL, Power BI and Machine Learning.
+                I have a background in Software Development
+                and a strong interest in Data Analytics.
+                I enjoy working with data and finding
+                meaningful insights that can support
+                better decision-making.
             </p>
 
             <p>
-                I have a background in Software Development and a strong
-                interest in Data Analytics. I enjoy working with data
-                and finding meaningful insights that can support better
-                decision-making.
+                I have hands-on experience with Python,
+                SQL, Excel, Power BI and Machine Learning
+                through academic projects and practical
+                learning.
             </p>
 
             <p>
-                I have hands-on experience with Python, SQL, Excel,
-                Power BI and Machine Learning through academic projects
-                and practical learning.
-            </p>
-
-            <p>
-                My career goal is to build a successful career in Data
-                Analytics where I can use my technical, analytical and
-                problem-solving skills to create data-driven solutions.
+                My career goal is to build a successful
+                career in Data Analytics where I can use
+                my technical, analytical and problem-solving
+                skills to create data-driven solutions.
             </p>
 
         </div>
@@ -158,14 +184,13 @@
 </section>
 
 
-
 <!-- ================= EDUCATION ================= -->
 
-<section id="education" class="section education-section">
+<section id="education" class="section light-section">
 
-    <div class="section-heading">
+    <div class="section-title">
 
-        <p>My journey</p>
+        <p>MY JOURNEY</p>
 
         <h2>Education</h2>
 
@@ -174,9 +199,9 @@
 
     <div class="timeline">
 
-        <div class="timeline-item">
+        <div class="education-card">
 
-            <span class="year">2025 — Present</span>
+            <span class="year">2025 - Present</span>
 
             <h3>Master of Computer Applications</h3>
 
@@ -187,11 +212,11 @@
         </div>
 
 
-        <div class="timeline-item">
+        <div class="education-card">
 
-            <span class="year">2022 — 2025</span>
+            <span class="year">2022 - 2025</span>
 
-            <h3>Bachelor of Vocational</h3>
+            <h3>Bachelor of Vocational / Software Development</h3>
 
             <h4>Software Development</h4>
 
@@ -200,7 +225,7 @@
         </div>
 
 
-        <div class="timeline-item">
+        <div class="education-card">
 
             <span class="year">2022</span>
 
@@ -213,7 +238,7 @@
         </div>
 
 
-        <div class="timeline-item">
+        <div class="education-card">
 
             <span class="year">2020</span>
 
@@ -230,14 +255,13 @@
 </section>
 
 
-
 <!-- ================= SKILLS ================= -->
 
 <section id="skills" class="section">
 
-    <div class="section-heading">
+    <div class="section-title">
 
-        <p>What I know</p>
+        <p>WHAT I KNOW</p>
 
         <h2>Skills</h2>
 
@@ -248,63 +272,96 @@
 
         <div class="skill-card">
 
+            <i class="fa-solid fa-code"></i>
+
             <h3>Programming</h3>
 
-            <p>Python, Java, SQL</p>
+            <div class="tags">
+                <span>Python</span>
+                <span>Java</span>
+                <span>SQL</span>
+            </div>
 
         </div>
 
 
         <div class="skill-card">
+
+            <i class="fa-solid fa-globe"></i>
 
             <h3>Web Development</h3>
 
-            <p>HTML, CSS, JavaScript, PHP</p>
+            <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>PHP</span>
+            </div>
 
         </div>
 
 
         <div class="skill-card">
+
+            <i class="fa-solid fa-chart-column"></i>
 
             <h3>Data Analytics</h3>
 
-            <p>
-                Excel, Power BI, Pandas, NumPy,
-                Data Visualization
-            </p>
+            <div class="tags">
+                <span>Excel</span>
+                <span>Power BI</span>
+                <span>Pandas</span>
+                <span>NumPy</span>
+                <span>Data Visualization</span>
+            </div>
 
         </div>
 
 
         <div class="skill-card">
+
+            <i class="fa-solid fa-database"></i>
 
             <h3>Database</h3>
 
-            <p>MySQL, Oracle</p>
+            <div class="tags">
+                <span>MySQL</span>
+                <span>Oracle</span>
+            </div>
 
         </div>
 
 
         <div class="skill-card">
+
+            <i class="fa-solid fa-brain"></i>
 
             <h3>Concepts</h3>
 
-            <p>
-                Machine Learning, OOP, DBMS,
-                Cloud Computing, Problem Solving
-            </p>
+            <div class="tags">
+                <span>Machine Learning</span>
+                <span>OOP</span>
+                <span>DBMS</span>
+                <span>Cloud Computing</span>
+                <span>Problem Solving</span>
+            </div>
 
         </div>
 
 
         <div class="skill-card">
 
+            <i class="fa-solid fa-toolbox"></i>
+
             <h3>Tools</h3>
 
-            <p>
-                VS Code, Git, GitHub,
-                Jupyter, Visual Studio
-            </p>
+            <div class="tags">
+                <span>VS Code</span>
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>Jupyter</span>
+                <span>Visual Studio</span>
+            </div>
 
         </div>
 
@@ -313,14 +370,13 @@
 </section>
 
 
-
 <!-- ================= PROJECTS ================= -->
 
-<section id="projects" class="section projects-section">
+<section id="projects" class="section light-section">
 
-    <div class="section-heading">
+    <div class="section-title">
 
-        <p>My work</p>
+        <p>MY WORK</p>
 
         <h2>Projects</h2>
 
@@ -332,19 +388,24 @@
 
         <div class="project-card">
 
-            <span class="project-number">01</span>
+            <div class="project-number">01</div>
 
             <h3>
-                Plant Disease Detection Using Machine Learning
+                Plant Disease Detection
+                Using Machine Learning
             </h3>
 
             <p>
-                A machine learning system that detects plant
-                diseases from leaf images.
+                A machine learning system that detects
+                plant diseases from leaf images.
             </p>
 
-            <div class="tech">
-                Python · OpenCV · TensorFlow · Keras · CNN
+            <div class="project-tech">
+                <span>Python</span>
+                <span>OpenCV</span>
+                <span>TensorFlow</span>
+                <span>Keras</span>
+                <span>CNN</span>
             </div>
 
         </div>
@@ -352,19 +413,24 @@
 
         <div class="project-card">
 
-            <span class="project-number">02</span>
+            <div class="project-number">02</div>
 
             <h3>
-                Stock Price Prediction Using Machine Learning
+                Stock Price Prediction
+                Using Machine Learning
             </h3>
 
             <p>
-                Analyzes historical stock data and predicts
-                future stock prices.
+                Analyzes historical stock data and
+                predicts future stock prices.
             </p>
 
-            <div class="tech">
-                Python · Pandas · NumPy · Matplotlib · ML
+            <div class="project-tech">
+                <span>Python</span>
+                <span>Pandas</span>
+                <span>NumPy</span>
+                <span>Matplotlib</span>
+                <span>ML</span>
             </div>
 
         </div>
@@ -372,19 +438,23 @@
 
         <div class="project-card">
 
-            <span class="project-number">03</span>
+            <div class="project-number">03</div>
 
             <h3>
-                Crop Recommendation System Using Soil Data
+                Crop Recommendation System
+                Using Soil Data
             </h3>
 
             <p>
-                Recommends suitable crops based on soil
-                and environmental data.
+                Recommends suitable crops based on
+                soil and environmental data.
             </p>
 
-            <div class="tech">
-                Python · Pandas · NumPy · Scikit-learn
+            <div class="project-tech">
+                <span>Python</span>
+                <span>Pandas</span>
+                <span>NumPy</span>
+                <span>Scikit-learn</span>
             </div>
 
         </div>
@@ -392,19 +462,20 @@
 
         <div class="project-card">
 
-            <span class="project-number">04</span>
+            <div class="project-number">04</div>
 
-            <h3>
-                Sales Data Analysis Dashboard
-            </h3>
+            <h3>Sales Data Analysis Dashboard</h3>
 
             <p>
-                Identified revenue, profit, product performance
-                and regional business trends.
+                Identified revenue, profit, product
+                performance and regional business trends.
             </p>
 
-            <div class="tech">
-                Excel · Power BI · SQL · Data Visualization
+            <div class="project-tech">
+                <span>Excel</span>
+                <span>Power BI</span>
+                <span>SQL</span>
+                <span>Data Visualization</span>
             </div>
 
         </div>
@@ -412,19 +483,20 @@
 
         <div class="project-card">
 
-            <span class="project-number">05</span>
+            <div class="project-number">05</div>
 
-            <h3>
-                HR Analytics Dashboard
-            </h3>
+            <h3>HR Analytics Dashboard</h3>
 
             <p>
-                Explored attrition, workforce trends, employee
-                performance and key HR insights.
+                Explored attrition, workforce trends,
+                employee performance and key HR insights.
             </p>
 
-            <div class="tech">
-                Excel · Power BI · SQL · Data Visualization
+            <div class="project-tech">
+                <span>Excel</span>
+                <span>Power BI</span>
+                <span>SQL</span>
+                <span>Data Visualization</span>
             </div>
 
         </div>
@@ -434,24 +506,25 @@
 </section>
 
 
-
 <!-- ================= CERTIFICATIONS ================= -->
 
 <section id="certifications" class="section">
 
-    <div class="section-heading">
+    <div class="section-title">
 
-        <p>Achievements</p>
+        <p>ACHIEVEMENTS</p>
 
         <h2>Certifications</h2>
 
     </div>
 
 
-    <div class="certifications">
+    <div class="certifications-grid">
 
 
-        <div class="certificate">
+        <div class="cert-card">
+
+            <i class="fa-solid fa-certificate"></i>
 
             <h3>Diploma in Cloud Computing</h3>
 
@@ -462,24 +535,30 @@
         </div>
 
 
-        <div class="certificate">
+        <div class="cert-card">
+
+            <i class="fa-solid fa-mobile-screen"></i>
 
             <h3>
-                Sarathi — Govt. Certificate in Mobile App Development
+                Sarathi – Govt. Certificate
+                in Mobile App Development
             </h3>
 
             <p>
-                Government-certified training in Mobile
-                Application Development.
+                Government-certified training in
+                Mobile Application Development.
             </p>
 
         </div>
 
 
-        <div class="certificate">
+        <div class="cert-card">
+
+            <i class="fa-brands fa-linux"></i>
 
             <h3>
-                National Workshop on Linux & Cloud Computing
+                National Workshop on Linux
+                & Cloud Computing
             </h3>
 
             <p>
@@ -490,57 +569,53 @@
         </div>
 
 
-        <div class="certificate">
+        <div class="cert-card">
 
-            <h3>
-                TCS iON Career Edge — Young Professional
-            </h3>
+            <i class="fa-solid fa-user-graduate"></i>
+
+            <h3>TCS iON Career Edge</h3>
 
             <p>
-                Completed the TCS iON Career Edge —
-                Young Professional course.
+                Young Professional – Completed the course.
             </p>
 
         </div>
 
 
-        <div class="certificate">
+        <div class="cert-card">
 
-            <h3>
-                Accenture Certificate in Artificial Intelligence
-            </h3>
+            <i class="fa-solid fa-robot"></i>
+
+            <h3>Accenture Certificate in Artificial Intelligence</h3>
 
             <p>
-                Completed the Artificial Intelligence
-                certification from Accenture.
+                Completed certification from Accenture.
             </p>
 
         </div>
 
 
-        <div class="certificate">
+        <div class="cert-card">
 
-            <h3>
-                Cybersecurity Analyst Job Simulation — TATA
-            </h3>
+            <i class="fa-solid fa-shield-halved"></i>
+
+            <h3>Cybersecurity Analyst Job Simulation</h3>
 
             <p>
-                Completed the Cybersecurity Analyst Job
-                Simulation certified by TATA.
+                Completed the job simulation certified by TATA.
             </p>
 
         </div>
 
 
-        <div class="certificate">
+        <div class="cert-card">
 
-            <h3>
-                Data Analytics & Visualization — Accenture
-            </h3>
+            <i class="fa-solid fa-chart-line"></i>
+
+            <h3>Data Analytics & Visualization</h3>
 
             <p>
-                Completed the Data Analytics and Visualization
-                certification from Accenture.
+                Completed the certification from Accenture.
             </p>
 
         </div>
@@ -550,20 +625,15 @@
 </section>
 
 
-
 <!-- ================= CONTACT ================= -->
 
 <section id="contact" class="section contact-section">
 
-    <div class="section-heading">
+    <div class="section-title">
 
-        <p>Get in touch</p>
+        <p>CONTACT</p>
 
-        <h2>Let's Connect</h2>
-
-        <p>
-            Open to internship and entry-level opportunities.
-        </p>
+        <h2>Get in touch</h2>
 
     </div>
 
@@ -571,90 +641,104 @@
     <div class="contact-container">
 
 
-        <div class="contact-form">
-
-            <h3>Send me a message</h3>
-
-            <form>
-
-                <label>Name</label>
-                <input type="text" placeholder="Your Name">
-
-                <label>Email</label>
-                <input type="email" placeholder="Your Email">
-
-                <label>Subject</label>
-                <input type="text" placeholder="Subject">
-
-                <label>Message</label>
-                <textarea
-                    rows="6"
-                    placeholder="Your Message">
-                </textarea>
-
-                <button type="submit">
-                    Send Message
-                </button>
-
-            </form>
-
-        </div>
-
-
         <div class="contact-info">
 
-            <h3>Contact Information</h3>
+            <h2>Let's connect</h2>
 
-            <div class="info-item">
-                <strong>Email</strong>
-                <p>sanskrutidesai24@gmail.com</p>
-            </div>
+            <p>
+                Open to internship and entry-level
+                opportunities.
+            </p>
 
-            <div class="info-item">
-                <strong>Phone</strong>
-                <p>9403908335</p>
-            </div>
 
-            <div class="info-item">
-                <strong>Location</strong>
-                <p>Pune, Maharashtra, India</p>
-            </div>
+            <div class="contact-item">
 
-            <div class="info-item">
+                <i class="fa-solid fa-envelope"></i>
 
-                <strong>LinkedIn</strong>
-
-                <p>
-                    <a
-                        href="https://www.linkedin.com/in/sanskruti-desai824/"
-                        target="_blank">
-                        linkedin.com/in/sanskruti-desai824
-                    </a>
-                </p>
+                <div>
+                    <h4>Email</h4>
+                    <p>sanskrutidesai24@gmail.com</p>
+                </div>
 
             </div>
 
 
-            <div class="info-item">
+            <div class="contact-item">
 
-                <strong>GitHub</strong>
+                <i class="fa-solid fa-phone"></i>
 
-                <p>
-                    <a
-                        href="https://github.com/sanskrutidesai24"
-                        target="_blank">
-                        github.com/sanskrutidesai24
-                    </a>
-                </p>
+                <div>
+                    <h4>Phone</h4>
+                    <p>9403908335</p>
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <div>
+                    <h4>Location</h4>
+                    <p>Pune, Maharashtra, India</p>
+                </div>
+
+            </div>
+
+
+            <div class="social-links">
+
+                <a href="https://linkedin.com/in/sanskruti-desai824"
+                   target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <a href="https://github.com/sanskrutidesai24"
+                   target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
 
             </div>
 
         </div>
+
+
+        <form class="contact-form">
+
+            <input
+                type="text"
+                placeholder="Name"
+                required
+            >
+
+            <input
+                type="email"
+                placeholder="Email"
+                required
+            >
+
+            <input
+                type="text"
+                placeholder="Subject"
+                required
+            >
+
+            <textarea
+                rows="6"
+                placeholder="Message"
+                required
+            ></textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
 
     </div>
 
 </section>
-
 
 
 <!-- ================= FOOTER ================= -->
@@ -666,11 +750,6 @@
     <h3>Sanskruti Desai</h3>
 
     <p>
-        I am open to internship and entry-level opportunities
-        in Data Analytics and Software Development.
-    </p>
-
-    <p class="copyright">
         © 2026 Sanskruti Desai. All rights reserved.
     </p>
 
@@ -679,4 +758,3 @@
 
 </body>
 </html>
-```
