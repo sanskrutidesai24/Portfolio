@@ -1,69 +1,137 @@
-document.addEventListener("DOMContentLoaded", function () {
+/* ================= MOBILE MENU ================= */
 
-    /* ================= SMOOTH SCROLL ================= */
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.querySelector(".nav-links");
 
-    document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+menuBtn.addEventListener("click", () => {
 
-        link.addEventListener("click", function (event) {
+    navLinks.classList.toggle("show");
 
-            const targetId = this.getAttribute("href");
-            const target = document.querySelector(targetId);
+    const icon = menuBtn.querySelector("i");
 
-            if (target) {
+    if (navLinks.classList.contains("show")) {
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-xmark");
+    } else {
+        icon.classList.remove("fa-xmark");
+        icon.classList.add("fa-bars");
+    }
 
-                event.preventDefault();
+});
 
-                target.scrollIntoView({
-                    behavior: "smooth"
-                });
 
-                const nav = document.querySelector("nav");
+/* Close menu after clicking */
 
-                if (nav) {
-                    nav.classList.remove("open");
-                }
-            }
+document.querySelectorAll(".nav-links a").forEach(link => {
 
-        });
+    link.addEventListener("click", () => {
+
+        navLinks.classList.remove("show");
+
+        const icon = menuBtn.querySelector("i");
+
+        icon.classList.remove("fa-xmark");
+        icon.classList.add("fa-bars");
 
     });
 
-
-    /* ================= MOBILE MENU ================= */
-
-    const menuButton = document.querySelector(".menu-btn");
-    const nav = document.querySelector("nav");
-
-    if (menuButton && nav) {
-
-        menuButton.addEventListener("click", function () {
-
-            nav.classList.toggle("open");
-
-        });
-
-    }
+});
 
 
-    /* ================= CONTACT FORM ================= */
+/* ================= TYPING EFFECT ================= */
 
-    const contactForm = document.getElementById("contactForm");
+const typingElement = document.getElementById("typing");
 
-    if (contactForm) {
+const roles = [
+    "Aspiring Data Analyst",
+    "Power BI Enthusiast",
+    "Python & SQL Learner",
+    "Machine Learning Enthusiast"
+];
 
-        contactForm.addEventListener("submit", function () {
+let roleIndex = 0;
+let charIndex = 0;
+let deleting = false;
 
-            const button = contactForm.querySelector("button");
+function typeRole() {
 
-            if (button) {
+    const currentRole = roles[roleIndex];
 
-                button.textContent = "Sending...";
-                button.disabled = true;
+    if (!deleting) {
 
+        typingElement.textContent =
+            currentRole.substring(0, charIndex + 1);
+
+        charIndex++;
+
+        if (charIndex === currentRole.length) {
+
+            deleting = true;
+
+            setTimeout(typeRole, 1800);
+
+            return;
+        }
+
+    } else {
+
+        typingElement.textContent =
+            currentRole.substring(0, charIndex - 1);
+
+        charIndex--;
+
+        if (charIndex === 0) {
+
+            deleting = false;
+
+            roleIndex++;
+
+            if (roleIndex >= roles.length) {
+                roleIndex = 0;
             }
 
-        });
+        }
 
     }
+
+    setTimeout(
+        typeRole,
+        deleting ? 45 : 80
+    );
+}
+
+typeRole();
+
+
+/* ================= ACTIVE NAVIGATION ================= */
+
+const sections = document.querySelectorAll("section[id]");
+const navItems = document.querySelectorAll(".nav-links a");
+
+window.addEventListener("scroll", () => {
+
+    let current = "";
+
+    sections.forEach(section => {
+
+        const sectionTop = section.offsetTop - 150;
+
+        if (window.scrollY >= sectionTop) {
+            current = section.getAttribute("id");
+        }
+
+    });
+
+    navItems.forEach(item => {
+
+        item.classList.remove("active");
+
+        if (
+            item.getAttribute("href") === "#" + current
+        ) {
+            item.classList.add("active");
+        }
+
+    });
 
 });
